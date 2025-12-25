@@ -247,7 +247,7 @@ async function submitQuiz() {
     render();
     
     try {
-        const response = await fetch(`${API_URL}/submit-response`, {
+        const response = await fetch(`${API_URL}/api/submit-response`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ answers: state.answers })
@@ -308,7 +308,7 @@ async function saveContact() {
     }
     
     try {
-        await fetch(`${API_URL}/save-contact`, {
+        await fetch(`${API_URL}/api/save-contact`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
