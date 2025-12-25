@@ -1,7 +1,7 @@
 console.log('app.js loaded successfully!');
 console.log('Starting render...');
 
-const API_URL = 'https://ai-persona-bes1.onrender.com/';
+const API_URL = 'https://ai-persona-bes1.onrender.com';
 
 let state = {
     screen: 'landing',
